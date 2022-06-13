@@ -165,7 +165,7 @@ if st.button("Predict Me !"):
         x.add_row(["Probability(Abstract)",pred_prob[2][0][0]])
         x.add_row(["Class Prediction",y_pred[0]])
         simple_prob = simplify_probability(pred_prob)
-        x.add_row(["Overall Probability (RP x RTRC x Abstract)",simple_prob])
+        x.add_row(["Overall Probability",simple_prob])
         x.add_row(["Time(secs)",pred_time])
         st.write("""\n\n""")
         st.write("""\t\t\t""",x)
